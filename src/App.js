@@ -24,6 +24,7 @@ function App() {
         <BrowserRouter>
           <Route path="/" exact component={About} />
           <Route path="/skills" component={Skills} />
+          <Route path="/skills" component={Skills} />
         </BrowserRouter>
 
 
