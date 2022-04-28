@@ -8,20 +8,6 @@
   
 }
 
-.sidenav{
-  height: 100%;
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 0%;
-  left: 0px;
-  overflow-x: hidden;
-  padding: 8px 0;
-  padding-left: 18px;
-  background-color: #525252;
-  
-}
-
 .main{
   margin-left: 140px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */

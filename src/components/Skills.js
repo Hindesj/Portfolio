@@ -2,8 +2,9 @@ import React from "react";
 import LinearProgress from '@mui/material/LinearProgress';
 import theme from "../theme";
 import { ThemeProvider } from "@mui/material";
+import { withRouter } from "react-router-dom";
 
-export default function Skills(){
+function Skills(){
     return(
         <div className='main'>
             <div className='first'>
@@ -49,3 +50,5 @@ const styles ={
         backgroundColor: '#A6D9F7'
     }
 }
+
+export default withRouter(Skills);
