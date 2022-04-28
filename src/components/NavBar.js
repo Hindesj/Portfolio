@@ -1,5 +1,6 @@
 import React from "react";
 import NavButton from "./NavButton";
+import { Link } from "react-router-dom";
 
 export default function NavBar(props){
    
@@ -13,7 +14,7 @@ export default function NavBar(props){
             </div>
 
             <div className="socials">
-                Socials Here
+                
             </div>
         </div>
     );

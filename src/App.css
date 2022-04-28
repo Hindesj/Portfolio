@@ -14,9 +14,11 @@
   position: fixed;
   z-index: 1;
   top: 0%;
-  left: 10px;
+  left: 0px;
   overflow-x: hidden;
   padding: 8px 0;
+  padding-left: 18px;
+  background-color: #525252;
   
 }
 
@@ -28,4 +30,9 @@
 
 .logo{
   padding-bottom: 150%;
+  padding-left:2px
+}
+
+.skills{
+  padding-top: 50%;
 }

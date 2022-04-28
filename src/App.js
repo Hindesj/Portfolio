@@ -1,10 +1,12 @@
 
 import './App.css';
-//import MediaCard from './components/MediaCard';
-//import Navbutton from './components/NavButton';
 import NavBar from './components/NavBar';
 import About from './components/About';
+import Skills from './components/Skills';
 import logo from './logo512.png';
+import Blog from './components/Blog';
+import Contact from './components/Contact';
+import { BrowserRouter, Route} from "react-router-dom";
 
 function App() {
   return (
@@ -19,22 +21,15 @@ function App() {
         
       </div>
       <div className='main'>
-        <About/>
+        <BrowserRouter>
+          <Route path="/" exact component={About} />
+          <Route path="/skills" component={Skills} />
+        </BrowserRouter>
 
 
 
 
 
-      {/*
-        <div className='mediaLayout'>
-          <MediaCard/>
-          <MediaCard/>
-        </div>
-        <div className='mediaLayout'>
-          <MediaCard/>
-          <MediaCard/>
-        </div>
-      */}
       </div>
       
     </div>
