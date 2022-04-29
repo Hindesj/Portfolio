@@ -15,63 +15,72 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 export default function Blog(){
-    return(
     
-        <Box>
-            <Stack spacing={2}>
-                <Item elevation={0} style={{paddingTop:'2%'}}>
-                    Projects that I have done.
-                </Item>
-                <Item elevation={0}>
-                    <div className='mediaLayout'>
-                        <MediaCard
-                            picture={deathStar}
-                            title='Star Wars- Death Star'
-                            about='My brother just had his first baby and I wanted to start my nephews love for
-                            Star Wars at young age.'
+    return(
+        <div style={styles.about}>
+            <Box>
+                <Stack spacing={2}>
+                    <Item elevation={0} style={{paddingTop:'2%'}}>
+                        Projects that I have done.
+                    </Item>
+                    <Item elevation={0}>
+                        <div className='mediaLayout'>
+                            <MediaCard
+                                picture={deathStar}
+                                title='Star Wars- Death Star'
+                                about='My brother just had his first baby and I wanted to start my nephews love for
+                                Star Wars at young age.'
 
-                        />
-                        <MediaCard
-                            picture={roboCar}
-                            title='Line Following Car'
-                            about='This is a car I made in the Intro to robotics class I took'
-                        />
-                    </div>
-                </Item>
-                <Item elevation={0}>
-                    <div className='mediaLayout'>
-                        <MediaCard
-                            picture={_3Dprinter}
-                            title='3D Printer Enclosure'
-                            about='I was tired of all my 3D prints warping and getting ruined'
-                        />
-                        <MediaCard
-                            picture={_3Dprinter}
-                            title='3D Printer Enclosure'
-                            about='I was tired of all my 3D prints warping and getting ruined'
-                        />
-                    </div>
-                </Item>
-                <Item elevation={0}>
-                    <div className='mediaLayout'>
-                        <MediaCard
-                            picture={_3Dprinter}
-                            title='3D Printer Enclosure'
-                            about='I was tired of all my 3D prints warping and getting ruined'
-                        />
-                        <MediaCard
-                            picture={_3Dprinter}
-                            title='3D Printer Enclosure'
-                            about='I was tired of all my 3D prints warping and getting ruined'
-                        />
-                    </div>
-                </Item>
-            </Stack>
-        </Box>
+                            />
+                            <MediaCard
+                                picture={roboCar}
+                                title='Line Following Car'
+                                about='This is a car I made in the Intro to robotics class I took'
+                            />
+                        </div>
+                    </Item>
+                    <Item elevation={0}>
+                        <div className='mediaLayout'>
+                            <MediaCard
+                                picture={_3Dprinter}
+                                title='3D Printer Enclosure'
+                                about='I was tired of all my 3D prints warping and getting ruined'
+                            />
+                            <MediaCard
+                                picture={_3Dprinter}
+                                title='3D Printer Enclosure'
+                                about='I was tired of all my 3D prints warping and getting ruined'
+                            />
+                        </div>
+                    </Item>
+                    <Item elevation={0}>
+                        <div className='mediaLayout'>
+                            <MediaCard
+                                picture={_3Dprinter}
+                                title='3D Printer Enclosure'
+                                about='I was tired of all my 3D prints warping and getting ruined'
+                            />
+                            <MediaCard
+                                picture={_3Dprinter}
+                                title='3D Printer Enclosure'
+                                about='I was tired of all my 3D prints warping and getting ruined'
+                            />
+                        </div>
+                    </Item>
+                </Stack>
+            </Box>
+        </div>
     )
 }
 
 const styles ={
+    about:{
+        display: 'flex',
+        alignItems:'center',
+        justifyContent: 'center',
+        fontSize: 'larger',
+        textAlign: 'center',
+    },
     card:{
         display: 'flex',
         flexDirection: 'row',
