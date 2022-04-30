@@ -1,6 +1,12 @@
 import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
+    typography: {
+        fontFamily: [
+          'Roboto Mono',
+          '"Helvetica Neue"'
+        ].join(','),
+      },
     palette:{
         primary:{
             lightest:'#E0E0E0',

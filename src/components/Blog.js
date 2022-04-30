@@ -80,6 +80,7 @@ const styles ={
         justifyContent: 'center',
         fontSize: 'larger',
         textAlign: 'center',
+        paddingLeft: '13%'
     },
     card:{
         display: 'flex',

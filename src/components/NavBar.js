@@ -1,6 +1,5 @@
 import React from "react";
 import NavButton from "./NavButton";
-import { Link } from "react-router-dom";
 import logo from "./assets/logo192.png"
 
 export default function NavBar(props){
@@ -11,12 +10,12 @@ export default function NavBar(props){
                 <img src={logo} alt="Girl in a jacket" width="100" height="100"/>
             </div>
 
-            <div>
+            <div style={{paddingLeft:'15%'}}>
                 <NavButton/>
             </div>
 
             <div className="socials">
-                <Link to="/skills" >Hello</Link>
+
             </div>
         </div>
     );
@@ -26,17 +25,17 @@ const styles ={
     navImg:{
     
         paddingBottom: '150%',
-        paddingLeft:'2px',
+        paddingLeft:'18%',
     },
     nav:{
-        height: '100%',
-        width: '130px',
+        height: '110%',
+        width: '11%',
         position: 'fixed',
         zIndex: '1',
         top: '0%',
         left: '0px',
         overflowX: 'hidden',
-        padding: '8px 0',
+        padding: '16px 0',
         paddingLeft: '18px',
         backgroundColor: '#525252'
     }
