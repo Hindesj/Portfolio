@@ -41,16 +41,27 @@ export default function BlogPage(props){
 
                     {/*check list */}
                     <Grid item xs={2}>
-                        <FormGroup>
-                            <FormControlLabel control={<Checkbox defaultChecked />} label="Label" />
-                            <FormControlLabel disabled control={<Checkbox />} label="Disabled" />
-                        </FormGroup>
+                        <Grid item xs={12}>
+                            <Typography style={styles.content} variant="h6">Supply List:</Typography>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <FormGroup>
+                                <FormControlLabel control={<Checkbox />} label={<Typography style={styles.content}>{props.one}</Typography>} />
+                                <FormControlLabel control={<Checkbox />} label={<Typography style={styles.content}>{props.two}</Typography>} />
+                                <FormControlLabel control={<Checkbox />} label={<Typography style={styles.content}>{props.three}</Typography>} />
+                                <FormControlLabel control={<Checkbox />} label={<Typography style={styles.content}>{props.four}</Typography>} />
+                                <FormControlLabel control={<Checkbox />} label={<Typography style={styles.content}>{props.five}</Typography>} />
+                                <FormControlLabel control={<Checkbox />} label={<Typography style={styles.content}>{props.six}</Typography>} />
+                            </FormGroup>
+                        </Grid>
                     </Grid>
 
                     {/* body */}
                     <Grid item xs={10}>
-                        <Typography style={styles.content} variant="h6">
-                            {props.body}
+                        <Typography style={styles.body} variant="h6">
+                            <p>{props.intro}</p>
+                            <p>{props.body}</p>
+                            <p>{props.outro}</p>
                         </Typography>
                     </Grid>
                 </Grid>
@@ -70,5 +81,10 @@ const styles={
         fontFamily:'Roboto Mono',
         color:'white',
         textAlign:'center'
+    },
+    body:{
+        fontFamily:'Roboto Mono',
+        color: 'white',
+        textIndent:'3%'
     }
 }

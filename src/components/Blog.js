@@ -7,12 +7,15 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack"
 import Paper from '@mui/material/Paper'
 import { styled } from '@mui/material/styles';
+import { CardActionArea } from '@mui/material';
+import {Link} from 'react-router-dom';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor:'#333333',
     color:'#F4AC45',
     textAlign: 'center',
   }));
+
 
 export default function Blog(){
     
@@ -25,46 +28,43 @@ export default function Blog(){
                     </Item>
                     <Item elevation={0}>
                         <div className='mediaLayout'>
-                            <MediaCard
-                                picture={deathStar}
-                                title='Star Wars- Death Star'
-                                about='My brother just had his first baby and I wanted to start my nephews love for
-                                Star Wars at young age.'
+                            <CardActionArea component={Link} to='/blog/deathstar'>
+                                <MediaCard
+                                    picture={deathStar}
+                                    title='Star Wars- Death Star'
+                                    about='The Quick Brown Fox Jumped over the Lazy Dog.'
+                                />
+                            </CardActionArea>
 
-                            />
-                            <MediaCard
-                                picture={roboCar}
-                                title='Line Following Car'
-                                about='This is a car I made in the Intro to robotics class I took'
-                            />
+                            <CardActionArea component={Link} to='/blog/linecar'>
+                                    <MediaCard
+                                        picture={roboCar}
+                                        title='Line Following Car'
+                                        about='This is a car I made in the Intro to robotics class I took'
+                                    />
+                            </CardActionArea>
+
                         </div>
                     </Item>
                     <Item elevation={0}>
                         <div className='mediaLayout'>
-                            <MediaCard
-                                picture={_3Dprinter}
-                                title='3D Printer Enclosure'
-                                about='I was tired of all my 3D prints warping and getting ruined'
-                            />
-                            <MediaCard
-                                picture={_3Dprinter}
-                                title='3D Printer Enclosure'
-                                about='I was tired of all my 3D prints warping and getting ruined'
-                            />
-                        </div>
-                    </Item>
-                    <Item elevation={0}>
-                        <div className='mediaLayout'>
-                            <MediaCard
-                                picture={_3Dprinter}
-                                title='3D Printer Enclosure'
-                                about='I was tired of all my 3D prints warping and getting ruined'
-                            />
-                            <MediaCard
-                                picture={_3Dprinter}
-                                title='3D Printer Enclosure'
-                                about='I was tired of all my 3D prints warping and getting ruined'
-                            />
+
+                            <CardActionArea component={Link} to='/blog/enclosure'>
+                                <MediaCard
+                                    picture={_3Dprinter}
+                                    title='3D Printer Enclosure'
+                                    about='I was tired of all my 3D prints warping and getting ruined'
+                                />
+                            </CardActionArea>
+
+                            <CardActionArea component={Link} to='/blog/enclosure'>
+                                <MediaCard
+                                    picture={_3Dprinter}
+                                    title='3D Printer Enclosure'
+                                    about='I was tired of all my 3D prints warping and getting ruined'
+                                />
+                            </CardActionArea>
+
                         </div>
                     </Item>
                 </Stack>
