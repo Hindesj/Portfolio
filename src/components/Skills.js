@@ -1,50 +1,49 @@
 import React from "react";
 import LinearProgress from '@mui/material/LinearProgress';
 import theme from "../theme";
-import { ThemeProvider } from "@mui/material";
-
+import { ThemeProvider, Typography } from "@mui/material";
+import  Grid  from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 
 export default function Skills(){
     return(
-        <div style={styles.main}>
+        <Box sx={{flexGrow:1}} style={{marginLeft:'30%', marginTop:'15%', marginRight:'20%'}}>
+            <ThemeProvider theme={theme}>
+                <Grid container spacing={10}>
 
-            <div style={styles.text}>
-                <div style={styles.text1}>Java</div>
-                <div style={styles.taskbar}>
-                    <ThemeProvider theme={theme}>
-                        <LinearProgress variant="determinate" color='skills2' value={90} />
-                    </ThemeProvider>
-                </div>
-            </div>
-
-            <div style={styles.text}>
-                <div style={styles.text1}>Javascript</div>
-                <div style={styles.taskbar}>
-                    <ThemeProvider theme={theme}>
-                        <LinearProgress variant="determinate" color='skills3' value={75} />
-                    </ThemeProvider>
-                </div>
-            </div>
-
-            <div style={styles.text}>
-                <div style={styles.text1}>Hello</div>
-                <div style={styles.taskbar}>
-                    <ThemeProvider theme={theme}>
-                        <LinearProgress variant="determinate" color='skills4' value={30} />
-                    </ThemeProvider>
-                </div>
-            </div>
-
-            <div style={styles.text}>
-                <div style={styles.text1}>hi</div>
-                <div style={styles.taskbar}>
-                    <ThemeProvider theme={theme}>
-                        <LinearProgress variant="determinate" color='skills5' value={50} />
-                    </ThemeProvider>
-                </div>
-            </div>
-
-        </div>
+                        <Grid item xs={3}>
+                            <Typography color='white'>Java</Typography>
+                        </Grid>
+                        <Grid item xs={9}>
+                            <LinearProgress variant="determinate" color='skills2' value={60} />
+                        </Grid>
+                    
+                        <Grid item xs={3}>
+                            <Typography color='white'>HTML</Typography> 
+                        </Grid>
+                        <Grid item xs={9}>
+                            <LinearProgress variant="determinate" color='skills1' value={95} />
+                        </Grid>
+                    
+                    
+                        <Grid item xs={3}>
+                            <Typography color='white'>Javascript</Typography>
+                        </Grid>
+                        <Grid item xs={9}>
+                            <LinearProgress variant="determinate" color='skills6' value={80} />
+                        </Grid>
+                    
+                    
+                        <Grid item xs={3}>
+                            <Typography color='white'>React</Typography>
+                        </Grid>
+                        <Grid item xs={9}>
+                            <LinearProgress variant="determinate" color='skills3' value={50} />
+                        </Grid>
+                    
+                </Grid>
+            </ThemeProvider>
+        </Box>
     )
 }
 

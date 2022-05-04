@@ -37,7 +37,7 @@ export default function Resume(){
                 <Grid spacing={1}>
                     <Typography style={{fontFamily: 'Roboto Mono', color: 'white'}} variant="h2">Jackson Hindes</Typography>
                     <Typography style={{fontFamily: 'Roboto Mono', color: 'white'}} variant="h6">github.com/Hindesj</Typography>
-                    <Typography style={{fontFamily: 'Roboto Mono', color: 'white', paddingTop:'2%'}} variant="h6">A Web Developer interested in doing everything.</Typography>
+                    <Typography style={{fontFamily: 'Roboto Mono', color: 'white', paddingTop:'2%'}} variant="h6">A Jack of all Trades</Typography>
                     <Typography style={{fontFamily: 'Roboto Mono', color: 'white', fontWeight:'bold', paddingTop:"2%"}} variant="h6">SKILLS</Typography>
                 </Grid>
                 <Box sx={{ flexGrow: 1 }}>
@@ -134,6 +134,9 @@ export default function Resume(){
                         <Grid item xs={5}>
                             <Typography style={{fontFamily: 'Roboto Mono', color: 'white'}} variant="h6">Managed the bank at the end of the night and 
                                 increased sales of the business</Typography>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <hr />
                         </Grid>
                     </Grid>
                 </Box>

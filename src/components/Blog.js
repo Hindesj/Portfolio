@@ -57,13 +57,6 @@ export default function Blog(){
                                 />
                             </CardActionArea>
 
-                            <CardActionArea component={Link} to='/blog/enclosure'>
-                                <MediaCard
-                                    picture={_3Dprinter}
-                                    title='3D Printer Enclosure'
-                                    about='I was tired of all my 3D prints warping and getting ruined'
-                                />
-                            </CardActionArea>
 
                         </div>
                     </Item>
