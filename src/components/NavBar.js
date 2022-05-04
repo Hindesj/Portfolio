@@ -2,12 +2,12 @@ import React from "react";
 import NavButton from "./NavButton";
 import logo from "./assets/HindesLogoWhite.png"
 
-export default function NavBar(props){
+export default function NavBar(){
    
     return(
         <div style={styles.nav}>
             <div style={styles.navImg} >
-                <img src={logo} alt="Girl in a jacket" width="200" height="200"/>
+                <img src={logo} alt="Logo" width="200" height="200"/>
             </div>
 
             <div style={{paddingLeft:'24%'}}>
