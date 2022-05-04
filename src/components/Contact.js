@@ -41,7 +41,7 @@ export default function Contact(){
                     </Grid>
                     <Grid item xs={10}>
                         <Typography style={styles.content} >
-                            <a style={styles.content} target="_blank" href="https://github.com/Hindesj">github.com/Hindesj</a>
+                            <a style={styles.content} rel="noreferrer" target="_blank" href="https://github.com/Hindesj">github.com/Hindesj</a>
                         </Typography>
                     </Grid>
 
@@ -50,7 +50,7 @@ export default function Contact(){
                     </Grid>
                     <Grid item xs={10}>
                         <Typography style={styles.content} >
-                            <a style={styles.content} target="_blank" href="https://www.linkedin.com/in/jackson-hindes-a0a2b2224">LinkedIn.com/JacksonHindes</a>
+                            <a style={styles.content} rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/jackson-hindes-a0a2b2224">LinkedIn.com/JacksonHindes</a>
                         </Typography>
                     </Grid>
 
@@ -60,7 +60,7 @@ export default function Contact(){
                     </Grid>
                     <Grid item xs={10}>
                         <Typography style={styles.content} >
-                            <a style={styles.content} target="_blank" href="https://twitter.com/jacksonhindes">Twitter.com/jacksonhindes</a>
+                            <a style={styles.content} rel="noreferrer" target="_blank" href="https://twitter.com/jacksonhindes">Twitter.com/jacksonhindes</a>
                         </Typography>
                     </Grid>
                 </Grid>

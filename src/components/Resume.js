@@ -11,23 +11,6 @@ import Box from "@mui/material/Box"
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-const styles={
-    container:{
-        display: 'flex',
-        flexWrap: 'wrap',
-    },
-    left:{
-        order: '1',
-        flex:'50%',
-        backgroundColor: 'red'
-    },
-    right:{
-        order: '2',
-        flex: '50%',
-        backgroundColor: 'green'
-    }
-}
-
 export default function Resume(){
     return(
         <Box sx={{flexGrow:1}} style={{marginLeft:'20%', marginTop:'5%', paddingRight:'5%'}}>
